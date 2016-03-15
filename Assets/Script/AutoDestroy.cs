@@ -5,15 +5,27 @@ public class AutoDestroy : MonoBehaviour {
 	public float durationTime = 2f;
 	public bool particleOnDeath = false;
 	public GameObject particleObject;
-	// Use this for initialization
-	void Start () {
-		InvokeRepeating("DestroySelf", durationTime, 10f);
-	}
-	
-	public void DestroySelf() {
-		if(particleOnDeath) Instantiate(particleObject, transform.position, Quaternion.identity);
-		Destroy(gameObject);
 
+	void Awake() {
+
+	}
+
+	void Start () {
+	}
+
+	void OnEnable() {
+
+        InvokeRepeating("DestroySelf", durationTime, 10f);
+	}
+
+	void OnDisable() {
+
+        CancelInvoke("DestroySelf");
+	}
+	public void DestroySelf() {
+        CancelInvoke("DestroySelf");
+		if(particleOnDeath) TrashMan.spawn(particleObject, transform.position, Quaternion.identity);
+		TrashMan.despawn(gameObject);
 	}
 
 	public void ParticlesOn(){

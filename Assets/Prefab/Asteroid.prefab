@@ -10,11 +10,11 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 95: {fileID: 9500000}
-  - 50: {fileID: 5000000}
-  - 114: {fileID: 11400000}
-  - 60: {fileID: 6000000}
+  - 50: {fileID: 5047326}
+  - 114: {fileID: 11420644}
+  - 68: {fileID: 6802440}
   m_Layer: 0
-  m_Name: Asteroid
+  m_Name: asteroid
   m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,12 +27,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.2732099, y: -0.14093904, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5000000
+--- !u!50 &5047326
 Rigidbody2D:
   serializedVersion: 2
   m_ObjectHideFlags: 1
@@ -42,15 +42,15 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &6000000
-PolygonCollider2D:
+--- !u!68 &6802440
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -62,24 +62,14 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
-    m_Paths:
-    - - {x: 0.46, y: 0.065}
-      - {x: 0.46, y: 0.205}
-      - {x: 0.45, y: 0.255}
-      - {x: 0.3, y: 0.425}
-      - {x: 0.26, y: 0.435}
-      - {x: 0.16, y: 0.435}
-      - {x: 0.11, y: 0.395}
-      - {x: -0.19, y: 0.235}
-      - {x: -0.43, y: -0.115}
-      - {x: -0.46, y: -0.205}
-      - {x: -0.46, y: -0.435}
-      - {x: -0.46, y: -0.445}
-      - {x: -0.28, y: -0.445}
-      - {x: -0.28, y: -0.445}
-      - {x: 0.13, y: -0.315}
-      - {x: 0.38, y: -0.135}
-      - {x: 0.44, y: -0.005}
+  - {x: -0.46444312, y: -0.3571074}
+  - {x: -0.33945718, y: -0.027666345}
+  - {x: -0.1105113, y: 0.28063628}
+  - {x: 0.24875171, y: 0.43677044}
+  - {x: 0.51121956, y: 0.07217084}
+  - {x: 0.2593928, y: -0.22207727}
+  - {x: -0.36279586, y: -0.45098925}
+  - {x: -0.44692495, y: -0.36826706}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -97,7 +87,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11400000
+--- !u!114 &11420644
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -110,10 +100,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 15
   DestroyTime: 1
-  maxInitialForce: 10
-  minInitialForce: 40
-  minInitialTorque: -50
-  maxInitialTorque: 50
+  minInitialForce: 30
+  maxInitialForce: 100
+  minInitialTorque: -100
+  maxInitialTorque: 100
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

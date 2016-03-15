@@ -72,8 +72,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46970546, y: -1.7322758, z: -1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
+  m_LocalPosition: {x: 2, y: -1.5, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 993ca7717f2394347a9d0908a5347e92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlasmaShot: {fileID: 400000, guid: 10662d050ae5b4291bad0e16b9f959ab, type: 2}
+  PlasmaShot: {fileID: 100000, guid: 10662d050ae5b4291bad0e16b9f959ab, type: 2}
   PlasmaSpawnPosition: {fileID: 400000}
   ReloadTime: 0.5
 --- !u!114 &11400002
@@ -200,7 +200,7 @@ MonoBehaviour:
   energy: 0
   maxEnergy: 100
   part: {fileID: 19800000}
-  special: {fileID: 0}
+  special: {fileID: 100002, guid: bb4d7eaabb40d42a49f621f0f88d6ff6, type: 2}
   shotTag: P2shot
   specialTag: P2special
   healthBar: {fileID: 0}
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c7f38d0651448339abd45da469db8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Missile: {fileID: 400002, guid: bb4d7eaabb40d42a49f621f0f88d6ff6, type: 2}
+  Missile: {fileID: 100002, guid: bb4d7eaabb40d42a49f621f0f88d6ff6, type: 2}
   MissileSpawnPosition: {fileID: 400000}
   ReloadTime: 3
 --- !u!198 &19800000

@@ -27,11 +27,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200000}
-  - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
+  - 50: {fileID: 5038716}
   m_Layer: 0
   m_Name: player1
   m_TagString: P1
@@ -92,7 +92,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400002}
   m_RootOrder: 0
---- !u!50 &5000000
+--- !u!50 &5038716
 Rigidbody2D:
   serializedVersion: 2
   m_ObjectHideFlags: 1
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 993ca7717f2394347a9d0908a5347e92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlasmaShot: {fileID: 400000, guid: f394aab672c2a41568115f6fbbc1785b, type: 2}
+  PlasmaShot: {fileID: 100000, guid: f394aab672c2a41568115f6fbbc1785b, type: 2}
   PlasmaSpawnPosition: {fileID: 400004}
   ReloadTime: 0.5
 --- !u!114 &11400004
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c7f38d0651448339abd45da469db8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Missile: {fileID: 400002, guid: 450b5044c9de44f098e6b2bf9adc440b, type: 2}
+  Missile: {fileID: 100002, guid: 450b5044c9de44f098e6b2bf9adc440b, type: 2}
   MissileSpawnPosition: {fileID: 400004}
   ReloadTime: 3
 --- !u!198 &19800000

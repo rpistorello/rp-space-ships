@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlasmaShooter : MonoBehaviour {
 
-	public Transform PlasmaShot;
+	public GameObject PlasmaShot;
 	public Transform PlasmaSpawnPosition;
 	public float ReloadTime;
 	private bool _canFire = true;
@@ -13,7 +13,7 @@ public class PlasmaShooter : MonoBehaviour {
 
 		_canFire = false;
 		StartCoroutine(ReloadTimer());
-		Instantiate(PlasmaShot, PlasmaSpawnPosition.position, transform.rotation);
+		TrashMan.spawn(PlasmaShot, PlasmaSpawnPosition.position, transform.rotation);
 	}
 
 	private IEnumerator ReloadTimer() {

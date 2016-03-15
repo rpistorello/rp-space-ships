@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   m_Layer: 0
-  m_Name: tiroazul
+  m_Name: tiroAzul
   m_TagString: P1shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

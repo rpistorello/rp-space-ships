@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour {
 
@@ -57,8 +58,9 @@ public class Game : MonoBehaviour {
 					GUIGameOver.gameObject.SetActive (false);
 					GUITutorialP1.gameObject.SetActive (false);
 					GUITutorialP2.gameObject.SetActive (false);
+                    TrashMan.spawn(Asteroid, Vector3.zero, Quaternion.AngleAxis(Random.Range(0,359), Vector3.forward));
 				}
-				else Application.LoadLevel("GameScene");
+				else SceneManager.LoadScene("GameScene");
 
 			}
 			return;
@@ -95,17 +97,7 @@ public class Game : MonoBehaviour {
 		if (Input.GetKey (KeyCode.M))
 			Player2.SendMessage ("ShootHommingMissile",SendMessageOptions.DontRequireReceiver);
 
-		if (Lives > 0)return;
-
-
-
-
-		/*GUIGameOver.gameObject.SetActive (true);
-		Time.timeScale = 0;
-		GameObject.FindGameObjectWithTag ("Player").SendMessage(
-								DestroySelfMsg,
-								SendMessageOptions.DontRequireReceiver);
-		*/
+//		if (Lives > 0)return;
 	}
 
 	public void SetEnd(string player){
@@ -124,7 +116,7 @@ public class Game : MonoBehaviour {
 	public void AsteroidSpawn() {
 
 		Vector3 newSpawnPos = new Vector3(boundaryBL.position.x, boundaryBL.position.y, 0);
-		Instantiate(Asteroid, newSpawnPos, Quaternion.Euler(0,0, Random.Range(0,359)));
+        TrashMan.spawn(Asteroid, newSpawnPos, Quaternion.AngleAxis(Random.Range(0,359), Vector3.forward));
 		Debug.Log ("Asteroid spawned");
 		//Player1.SendMessage ("Rotate",  -1, SendMessageOptions.DontRequireReceiver);
 	}

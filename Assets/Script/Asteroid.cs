@@ -1,21 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AsteroidScript : MonoBehaviour {
-	public int currentLife = 50;
+public class Asteroid : MonoBehaviour {
+	public int currentLife = 15;
 	public float DestroyTime = 1f;
-	public float maxInitialForce = 10;
-	public float minInitialForce = 40;
+	public float minInitialForce = 10;
+	public float maxInitialForce = 40;
 	public float minInitialTorque = -50;
 	public float maxInitialTorque = 50;
 
 	private Animator anim;
-	private bool dead;
-	// Use this for initialization
-	void Start () {
-		dead = false;
-		anim = GetComponent<Animator> ();
+	private bool dead = false;
+	private Rigidbody2D body;
+
+    void Awake(){
+        anim = GetComponent<Animator> ();
+        body = GetComponent<Rigidbody2D>();
+    }
+
+	void Start() {
+        resetValues();
 	}
+
+    void OnEnable() {
+        resetValues();
+    }
+	void resetValues() {
+        Debug.Log("reseted asteroid");
+        body.velocity = Vector2.zero;
+        body.angularVelocity = 0;
+        body.AddTorque (Random.Range(minInitialTorque, maxInitialTorque));
+
+        Vector2 force = new Vector2 (
+                Random.Range(-minInitialForce, minInitialForce),
+                Random.Range(-minInitialForce, minInitialForce));
+
+        body.AddForce(force.normalized * Random.Range(minInitialForce, maxInitialForce));
+
+        dead = false;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,23 +47,7 @@ public class AsteroidScript : MonoBehaviour {
 			DestroySelf ();
 		}
 	}
-	
-	void Awake(){
-		//transform.position = new Vector3 (Game.Data.boundaryBL.position.x,0,0);
-		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-		GetComponent<Rigidbody2D>().angularVelocity = 0;
-		GetComponent<Rigidbody2D>().AddTorque (
-			Random.Range(minInitialTorque, maxInitialTorque));
 
-		Vector2 force = new Vector2 (
-			Random.Range(-10, 10),
-			Random.Range(-10, 10));
-
-		GetComponent<Rigidbody2D>().AddForce(
-			force.normalized * Random.Range(minInitialForce, maxInitialForce)
-			);
-
-	}
 	void OnTriggerEnter2D(Collider2D obstacle){
 		string tag = obstacle.gameObject.tag;
 		Debug.Log("tag: " + tag);
@@ -62,6 +69,7 @@ public class AsteroidScript : MonoBehaviour {
 			obstacle.SendMessage ("TakeDamage", Game.Data.asteroidDamage, SendMessageOptions.DontRequireReceiver);
 		}
 	}
+
 	public void DestroySelf() {
 		anim.Play ("Destroy");
 		dead = true;
@@ -70,7 +78,7 @@ public class AsteroidScript : MonoBehaviour {
 	}
 	private IEnumerator DestroyTimer() {
 		yield return new WaitForSeconds(DestroyTime);
-		Destroy(gameObject);
+        TrashMan.despawn(gameObject);
 	}
 
 	void TakeDamage(int damage){

@@ -95,7 +95,7 @@ public class SpaceshipMovement : MonoBehaviour {
 	}
 
 	void StopParticles(){
-		part.enableEmission = false;
+//		part.enableEmission = false;
 	}
 
 }

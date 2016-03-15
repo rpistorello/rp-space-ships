@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class HommingMissileShooter : MonoBehaviour {
 
-	public Transform Missile;
+	public GameObject Missile;
 	public Transform MissileSpawnPosition;
 	public float ReloadTime;
 	private bool _canFire = true;
@@ -12,8 +12,8 @@ public class HommingMissileShooter : MonoBehaviour {
 		if (!_canFire) return;
 
 		_canFire = false;
-		//StartCoroutine(ReloadTimer());
-		Instantiate(Missile, MissileSpawnPosition.position, transform.rotation);
+
+		TrashMan.spawn(Missile, MissileSpawnPosition.position, transform.rotation);
 	}
 
 	private IEnumerator ReloadTimer() {
