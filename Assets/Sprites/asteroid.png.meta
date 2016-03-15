@@ -1,0 +1,336 @@
+fileFormatVersion: 2
+guid: b02edb1fdb76e49b6bdbb3a0fbb70522
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: asteroid_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2550
+        width: 110
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2457
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2366
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2275
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2184
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2093
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2002
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1911
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1820
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1729
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1638
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1547
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1456
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1365
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1274
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1183
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1092
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1001
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 910
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 819
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 637
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 546
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 455
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 273
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 182
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: asteroid_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 109
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
